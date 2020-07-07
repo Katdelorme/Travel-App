@@ -57,6 +57,7 @@ body {
 
 h1 {
   font-size: 2.0625em;
+  font-weight: 700;
 }
 
 h2 {
@@ -148,8 +149,8 @@ blockquote{
 .btn,
 .btn:link,
 .btn:visited {
+  background: #0fd9a3;
   background: #9f98fc;
-  border: 0;
   border-radius: 20px;
   color: #ffffff;
   display: inline-block;
@@ -210,7 +211,6 @@ nav {
 .nav-link ul li{
   display: inline;
   list-style-type: none;
-  margin-left: 5%;
 }
 
 .nav-link a:hover,
@@ -236,16 +236,15 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 5%;
+  margin: 0px 5%;
   padding: 0 2%;
 }
 
 .container-split {
   display: flex;
   justify-content: space-between;
-  margin: 0 5% 5% 5%;
-  padding: 0 2% 2% 2%;
-
+  margin: 0px 5% 5%;
+  padding: 0px 2% 2%;
 }
 
 .gray-section {
@@ -253,7 +252,7 @@ nav {
 }
 
 .color-section {
-  background: #dbebff;
+    background: rgb(219, 235, 255);
 }
 
 .right,
@@ -279,8 +278,8 @@ nav {
   margin: 4% 2% 0 2%;
 }
 
-.item input:first-child{
-  margin: 0 0 2% 0;
+.item input:first-child {
+    margin: 0px 0px 2%;
 }
 
 .intro{
@@ -294,21 +293,17 @@ button {
 }
 
 input[type="text"]{
-  background: #ffffff; /*f1f1f1*/
-  border: none;
-  border-radius: 25px;
   color: #757575;
   box-sizing: border-box;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   line-height: normal;
-  margin: 1% 0 0 0;
+  background: #ffffff;
+  border: none;
+  border-radius: 25px;
+  margin: 1% 0px 0px;
   padding: 3% 4%;
   width: 100%;
-}
-
-input[type="text"]::placeholder{
-  color: #babdc2;
 }
 
 textarea {
@@ -321,12 +316,11 @@ textarea {
   padding: 1%;
 }
 
-
 input:focus,
 input[type="text"]:focus,
 textarea:focus {
-  /*background: #fafafa none repeat scroll 0 0;*/
-  background: #e8e6fe;
+  background: #e8e7fe;
+  border: none;
   outline: none;
 }
 /* ///////////// Landing Page end ////////////// */

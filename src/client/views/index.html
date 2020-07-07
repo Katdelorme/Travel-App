@@ -1,0 +1,95 @@
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Travel App - Katherine Delorme</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Travel App ">
+	<meta name="keywords" content="Travel App, Javascript, Node, Express, API, Fetch">
+	<meta name="author" content="Katherine Delorme">
+	<meta name="application-name" content="Travel">
+	<!--Dublin Core-->
+	<meta name="DC.Title" content="Travel App - Katherine Delorme">
+	<meta name="DC.Creator" content="Katherine Delorme">
+	<meta name="DC.Subject" content="Travel">
+	<meta name="DC.Description" content="Travel App">
+	<meta name="DC.Type" content="App">
+	<meta name="DC.Language" content="English">
+	<!--Twitter Card: Summary-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@Katdelorme">
+	<meta name="twitter:title" content="Travel App - Katherine Delorme">
+	<meta name="twitter:description" content="Travel App">
+	<meta name="twitter:image" content="">
+	<!--Facebook Open Graph-->
+	<meta property="og:url" content="">
+	<meta property="og:type" content="webpage">
+	<meta property="og:title" content="Travel App - Katherine Delorme">
+	<meta property="og:description" content="Travel App">
+	<meta property="og:image" content="">
+	<!--robots index-->
+	<meta name="robots" content="noindex,nofollow">
+	<!--favicon-->
+	<link rel="icon" type="image/png" href="assets/fav.png">
+	<!--stylesheets-->
+	<!--stylesheets using webpack doesn't need to be called-->
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h3>
+				<a href="#"><h3 class="text-bold">Travel App</h3></a>
+			</h3>
+			<div class="nav-link">
+				<ul id="nav-links">
+					<li>Trip Planning</li>
+					<li>Packing Guides</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+  <section class="container color-section">
+		<h1 class="heading">Hi <span class="text-bold">Traveler</span>,</h1>
+	</section>
+
+	<section class="container-split color-section">
+		<div class="left">
+			<div class="item zipcode">
+				<input type="text" id="zip" placeholder="Where are you headed?">
+				<input type="text" id="feelings" placeholder="When are you leaving?">
+			</div>
+			<div class="item clothing">
+				<button id="generate" class="btn" type="submit">Let's Coordinate</button>
+			</div>
+		</div>
+		<div class="right">
+			<div class="item result">
+				<h3>Today is...</h3>
+				<div id="entryHolder" class="boxSide">
+					<div id="date"></div>
+					<div id="temp"></div>
+					<div id="content"></div>
+					<h4 id="city"></h4>
+					<h4 id="zipPlaced"></h4>
+					<h4 id="zipPlaced2"></h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- Footer -->
+  <footer>
+  	<p class="text-center">Travel App</p>
+  </footer>
+	<!-- Footer End-->
+
+	<!-- JS File-->
+	<!--using webpack this doesn't need to be called-->
+	<!-- <script src="app.js"></script> -->
+
+
+</body></html>
