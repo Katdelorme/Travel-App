@@ -67,6 +67,9 @@ function listening(){
 }*/
 
 //////////////////////////////////////////////////////////////////////////////////
+//Environment variables for api keys
+const dotenv = require('dotenv');
+	dotenv.config();
 
 //Creatin the improvised database to handle the informations we got
 const alldata = {};

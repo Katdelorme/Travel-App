@@ -9,16 +9,16 @@
 //let geoURL = 'http://api.geonames.org/citiesJSON?q=';
 let geoURL = 'http://api.geonames.org/searchJSON?q=';
 const countryURL = '&maxRows=10';
-let username = 'katdelorme';
+const username = 'process.env.API_GEO';
 
 //Calling API Keys - Weather - Weatherbit
-let weatherbitURL = 'http://api.weatherbit.io/v2.0/forecast/daily?';
-let weatherbitKey = '39e48ad2b6694b01b14149f14923a25d';
+const weatherbitURL = 'http://api.weatherbit.io/v2.0/forecast/daily?';
+const weatherbitKey = 'process.env.API_KEY_BIT';
 
 //Calling API Keys - Pictures - Pixabay
-let pixabayURL = 'https://pixabay.com/api/?';
-let pixabaykey = '17380353-d94c89397115d5755965e7684';
-let pixabayImageURL = '&image_type=photo&pretty=true&category=places'
+const pixabayURL = 'https://pixabay.com/api/?';
+const pixabaykey = 'process.env.API_KEY_PIX';
+const pixabayImageURL = '&image_type=photo&pretty=true&category=places'
 
 //Function for the api requests. Above are their values. The function is exported below.
 async function runAPIs(event){
@@ -134,18 +134,18 @@ export { getData }
 export { postData }*/
 
 
-//COORDINATES
+//Calling API Keys - Coordinates - Geonames
 const geonamesUrl = 'http://api.geonames.org/searchJSON?q=';
 const conUrl = '&maxRows=10';
-const username = 'katdelorme';
+const username = 'process.env.API_GEO';
 
-//WEATHER
+//Calling API Keys - Weather - Weatherbit
 const weatherUrl = 'http://api.weatherbit.io/v2.0/forecast/daily?';
-const key = '39e48ad2b6694b01b14149f14923a25d';
+const key = 'process.env.API_KEY_BIT';
 
-//PIXABAY
+//Calling API Keys - Pictures - Pixabay
 const pixabayUrl = 'https://pixabay.com/api/?';
-const pixkey = '17380353-d94c89397115d5755965e7684';
+const pixkey = 'process.env.API_KEY_PIX';
 const url = '&image_type=photo&pretty=true&category=places';
 
 //Main function to do the api requests

@@ -12,6 +12,13 @@ You can download a zip file, fork this project, or clone with HTTPS.
 
 Create a .env file, environment variables, file to store the api id and key. Use `npm`, or the dependency manager of your choice, to install `npm install dotenv` to use the environment variables you set in the file named .env placed in the root of the project. Put the API keys in the .env file.
 
+The .env file can go as follows:
+`API_GEO=valueHere
+API_KEY_BIT=valueHere
+API_KEY_PIX=valueHere`
+
+API keys need for: Geonames, Weatherbit, and Pixabay.
+
 There is a development environment and a production environment that uses the Express server.
 You can use `npm start`
 Use `npm run build-dev`, `npm run build-prod`, and `npm run server`
