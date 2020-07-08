@@ -1,29 +1,22 @@
-import { getInfo } from './js/app'
-import { weatherDisplay } from './js/app'
-import { displayWeather } from './js/app'
+/*import { runAPIs } from './js/app'
 
 import './styles/styles.scss'
 
-export {
-    getInfo,
-    weatherDisplay,
-    displayWeather
-}
-
-/*import { checkForName } from './js/nameChecker'
-import { handleSubmit } from './js/formHandler'
-
-import './styles/resets.scss'
-import './styles/base.scss'
-import './styles/header.scss'
-import './styles/form.scss'
-import './styles/footer.scss'
-
-//console.log(checkForName);
-
-//alert("I EXIST")
+//If we are exporting functions from our application.js file, our event listeners can’t go there. Where can we put them? To call that exported function?
+  document.getElementById('generate').addEventListener('click', runAPIs);
 
 export {
-    checkForName,
-    handleSubmit
+    runAPIs,
 }*/
+
+
+import { runAPIs } from "./js/app";
+//Event Listener to show resulsts
+
+import './styles/styles.scss'
+document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('.continue').addEventListener('click', runAPIs);
+});
+export {
+    runAPIs
+}

@@ -59,24 +59,52 @@
 	<section class="container-split color-section">
 		<div class="left">
 			<div class="item zipcode">
-				<input type="text" id="zip" placeholder="Where are you headed?">
-				<input type="text" id="feelings" placeholder="When are you leaving?">
+				<label>Where are you headed?</label>
+				<input type="text" id="city" placeholder="City or Country">
+				<div id="alert"></div>
+				<label>When are you leaving</label>
+				<input id="leaving" type="date" value="" placeholder="date" name="date"><br/>
+				<label>When will you return</label>
+				 <input id="returning" type="date" value="" placeholder="date" name="date"><br/>
 			</div>
 			<div class="item clothing">
-				<button id="generate" class="btn" type="submit">Let's Coordinate</button>
+				<!-- <button id="generate" class="btn" type="submit">Let's Travel</button> -->
+				<button class="continue btn">Let's Travel</button>
 			</div>
 		</div>
 		<div class="right">
-			<div class="item result">
-				<h3>Today is...</h3>
-				<div id="entryHolder" class="boxSide">
-					<div id="date"></div>
-					<div id="temp"></div>
-					<div id="content"></div>
-					<h4 id="city"></h4>
-					<h4 id="zipPlaced"></h4>
-					<h4 id="zipPlaced2"></h4>
-				</div>
+			<div class="resultpart">
+					<div class="container-img">
+						<img id="img" />
+					</div>
+					<div class="result">
+						<div class="titles">
+							<p>
+								<span class="text-bold">Country: </span>
+								<span id="country"></span>
+							</p>
+							<p>
+								<span class="text-bold">City: </span>
+								<span id="place"></span>
+							</p>
+							<p>
+								<span class="text-bold">Weather: </span>
+								<span id="weather"></span>
+							</p>
+							<p>
+								<span class="text-bold">Weather Forecast: </span>
+								<span id="description"></span>
+							</p>
+							<p>
+								<span class="text-bold">Leaving Date: </span>
+								<span id="leavingdate"></span>
+							</p>
+							<p>
+								<span class="text-bold">Returning Date: </span>
+								<span id="returningdate"></span>
+							</p>
+						</div>
+					</div>
 			</div>
 		</div>
 	</section>
@@ -91,5 +119,15 @@
 	<!--using webpack this doesn't need to be called-->
 	<!-- <script src="app.js"></script> -->
 
+	<script>
+	 // Check that service workers are supported
+	 if ('serviceWorker' in navigator) {
+	     // Use the window load event to keep the page load performant
+	     window.addEventListener('load', () => {
+	         navigator.serviceWorker.register('/service-worker.js');
+	     });
+	 }
+	</script>
 
-</body></html>
+	</body>
+</html>

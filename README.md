@@ -16,10 +16,6 @@ There is a development environment and a production environment that uses the Ex
 You can use `npm start`
 Use `npm run build-dev`, `npm run build-prod`, and `npm run server`
 
-development environment on: localhost:8080
-
-production environment on: localhost:8081
-
 Feel free to change the localhost.
 
 ### Dependencies
