@@ -42,7 +42,7 @@ Feel free to change the localhost.
 * CSS
 
 ## Author
-* Katherine Delorme - *[katherinedelorme.com](http://katherinedelorme.com?utm_source=github&utm_medium=repo&utm_campaign=quarantine_chronicles_readme "Portfolio Website")*
+* Katherine Delorme - *[katherinedelorme.com](http://katherinedelorme.com?utm_source=github&utm_medium=repo&utm_campaign=travel_app_readme "Portfolio Website")*
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
